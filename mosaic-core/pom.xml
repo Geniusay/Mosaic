@@ -28,7 +28,7 @@
         <dependency>
             <groupId>io.github.timemachinelab</groupId>
             <artifactId>mosaic-agent</artifactId>
-            <version>0.0.2-beta</version>
+            <version>0.0.3-beta</version>
         </dependency>
         <dependency>
             <groupId>com.github.javaparser</groupId>

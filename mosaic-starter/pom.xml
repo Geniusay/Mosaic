@@ -76,7 +76,7 @@
         <dependency>
             <groupId>io.github.timemachinelab</groupId>
             <artifactId>mosaic-core</artifactId>
-            <version>0.0.2-beta</version>
+            <version>0.0.3-beta</version>
         </dependency>
     </dependencies>
 
