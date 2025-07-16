@@ -259,6 +259,7 @@
                 <extensions>true</extensions>
                 <configuration>
                     <publishingServerId>central</publishingServerId>
+                    <url>https://central.sonatype.com</url>
                     <tokenAuth>true</tokenAuth>
                 </configuration>
             </plugin>
