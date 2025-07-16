@@ -138,26 +138,26 @@
                     </execution>
                 </executions>
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-gpg-plugin</artifactId>
-                <version>1.6</version>
-                <configuration>
-                    <!--指定 GPG 执行程序的路径-->
-                    <executable>C:\Program Files (x86)\GnuPG\bin\gpg.exe</executable>
-                    <!--指定用于签名的 GPG 密钥名称。-->
-                    <keyname>TimeMachineLab</keyname>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>sign-artifacts</id>
-                        <phase>verify</phase>
-                        <goals>
-                            <goal>sign</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-gpg-plugin</artifactId>-->
+<!--                <version>1.6</version>-->
+<!--                <configuration>-->
+<!--                    &lt;!&ndash;指定 GPG 执行程序的路径&ndash;&gt;-->
+<!--                    <executable>C:\Program Files (x86)\GnuPG\bin\gpg.exe</executable>-->
+<!--                    &lt;!&ndash;指定用于签名的 GPG 密钥名称。&ndash;&gt;-->
+<!--                    <keyname>TimeMachineLab</keyname>-->
+<!--                </configuration>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <id>sign-artifacts</id>-->
+<!--                        <phase>verify</phase>-->
+<!--                        <goals>-->
+<!--                            <goal>sign</goal>-->
+<!--                        </goals>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--            </plugin>-->
 
             <plugin>
                 <groupId>org.springframework.boot</groupId>
