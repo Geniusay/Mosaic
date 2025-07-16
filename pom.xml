@@ -252,15 +252,13 @@
                 </configuration>
             </plugin>
             <plugin>
-
-                <groupId>org.sonatype.central</groupId>
-                <artifactId>central-publishing-maven-plugin</artifactId>
-                <version>0.8.0</version>
+                <groupId>org.sonatype.plugins</groupId>
+                <artifactId>nexus-staging-maven-plugin</artifactId>
                 <extensions>true</extensions>
                 <configuration>
-                    <publishingServerId>central</publishingServerId>
-                    <url>https://central.sonatype.com</url>
-                    <tokenAuth>true</tokenAuth>
+                    <serverId>ossrh</serverId>
+                    <nexusUrl>https://central.sonatype.com</nexusUrl>
+                    <autoReleaseAfterClose>true</autoReleaseAfterClose>
                 </configuration>
             </plugin>
             <plugin>
