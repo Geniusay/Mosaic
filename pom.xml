@@ -174,11 +174,11 @@
 
             <distributionManagement>
                 <snapshotRepository>
-                    <id>ossrh</id>
+                    <id>central</id>
                     <url>https://oss.sonatype.org/content/repositories/snapshots</url>
                 </snapshotRepository>
                 <repository>
-                    <id>ossrh</id>
+                    <id>central</id>
                     <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
                 </repository>
             </distributionManagement>
@@ -233,32 +233,13 @@
                 </executions>
             </plugin>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-gpg-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>sign-artifacts</id>
-                        <phase>verify</phase>
-                        <goals>
-                            <goal>sign</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <gpgArguments>
-                        <argument>--pinentry-mode</argument>
-                        <argument>loopback</argument>
-                    </gpgArguments>
-                </configuration>
-            </plugin>
-            <plugin>
                 <groupId>org.sonatype.central</groupId>
                 <artifactId>central-publishing-maven-plugin</artifactId>
-                <version>0.4.0</version>
+                <version>0.8.0</version>
                 <extensions>true</extensions>
                 <configuration>
-                    <publishingServerId>ossrh</publishingServerId>
-                    <tokenAuth>true</tokenAuth>
+                    <publishingServerId>central</publishingServerId>
+                    <autoPublish>true</autoPublish>
                 </configuration>
             </plugin>
             <plugin>
